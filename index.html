@@ -24,7 +24,8 @@
     <section id="sobre">
         <h2>Sobre mim</h2>
 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Rp3yFGnZqke6XSFc0aJ8EBwicVx62kKsxg&s" alt="Imagem de foto de perfil" title="Imagem de perfil">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Rp3yFGnZqke6XSFc0aJ8EBwicVx62kKsxg&s"
+            alt="Imagem de foto de perfil" title="Imagem de perfil">
 
         <article>
 
@@ -64,6 +65,45 @@
 
     </section>
 
+    <section id="habilidades">
+
+        <h2>Habilidades e tecnologias</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Iniciante</td>
+                    <td>Capaz de construir páginas web sêmanticas e responsivas</td>
+                </tr>
+
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediário</td>
+                    <td>Experiência com flexbox, grid e animações CSS</td>
+
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Básico</td>
+                        <td>Desenvolvimento de scripts do lado do cliente para interações</td>
+                    </tr>
+                </tr>
+            </tbody>
+
+        </table>
+
+
+    </section>
+
     <footer>
         <p> Direitos reservados a Leandro</p>
 
@@ -73,10 +113,40 @@
 
             <p>Tem um projeto em mente? Entre em contato.</p>
 
-            <address>
-                Email: <a href="mailto:leandro@internet.com">leandro@internet.com</a> <br>
-                Telefone: <a href="tell:(47) 99999-9999">(47) 99999-9999</a>
-            </address>
+            <form action="">
+
+                <label for="Nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="Email">Email: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"><br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <br>
+
+                <label for="mensagem">Mensagem: </label>
+
+                <textarea name="mensagem" id="mensagem" cols='20' rows="5" required></textarea>
+
+                <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+
+                <br>
+
+                <input type="submit" value="Enviar mensagem">
+
+            </form>
 
         </section>
 
